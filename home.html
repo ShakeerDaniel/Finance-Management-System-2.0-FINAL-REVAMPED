@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/back.css">
+</head>
+<body>
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+    <div class="container">
+	<div id="welcome-container">
+    <img id="profile-picture" src="" alt="Profile Picture" />
+</div>
+        <h1 id="welcome-message">Welcome</h1>
+		
+        <button onclick="changeUser()">Change Profile</button>
+		<button onclick="editProfile()">Edit Profile</button>
+        <button onclick="resetUserData()">Reset Data</button>
+        <button onclick="deleteProfile()">Delete Profile</button>
+        
+        <div id="income-container" class="section">
+            <h2>Income</h2>
+            <div id="income-list"></div>
+            <div id="total-income"></div>
+            <button onclick="redirectToIncome()">Add Income</button>
+        </div>
+
+        <div id="expenses-container" class="section">
+            <h2>Expenses</h2>
+            <center><p>Manage your expenses with visual guide</p></center> 
+            <button onclick="redirectToExpense()">View Expenses</button>
+        </div>
+
+        <div id="budgets-container" class="section">
+            <h2>Budgets</h2>
+            <div id="budget-list"></div>
+            <button onclick="redirectToBudget()">Set Budget</button>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
+
+

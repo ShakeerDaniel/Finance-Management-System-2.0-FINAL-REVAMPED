@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/back.css">
+</head>
+<body>
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <form id="edit-profile-form">
+            <label for="profile-name">Profile Name:</label>
+            <input type="text" id="profile-name" name="profile-name" required>
+            
+            <label>Profile Picture:</label>
+            <div>
+                <input type="radio" id="profile-picture-url-option" name="profile-picture-option" value="url" checked>
+                <label for="profile-picture-url-option">Use URL:</label>
+                <input type="text" id="profile-picture-url" name="profile-picture-url" placeholder="Enter image URL">
+            </div>
+        <button type="submit" class="save-button">Save Changes</button>
+        </form>
+       <button onclick="redirectToHome()" class="cancel-button">Cancel</button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

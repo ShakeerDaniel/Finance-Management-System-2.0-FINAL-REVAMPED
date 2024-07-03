@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Pie Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            margin-right: 10px;
+        }
+        .input-group input {
+            margin-right: 10px;
+        }
+        .input-group button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Interactive Pie Chart</h2>
+        <div id="input-form">
+            <div class="input-group">
+                <label for="label">Label:</label>
+                <input type="text" id="label" placeholder="Enter label">
+                <label for="value">Value:</label>
+                <input type="number" id="value" placeholder="Enter value">
+                <button onclick="addData()">Add Data</button>
+                <button onclick="removeData()">Remove Selected Data</button>
+            </div>
+        </div>
+    </div>
+    <div style="width: 50%;">
+        <canvas id="myPieChart"></canvas>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  /*  background-image: url('background.jpeg');  */
+    background-size: cover; /* This makes sure the background image covers the entire background */
+    background-position: center; /* This centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    
+}
+
+body {
+    min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.chart-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+	font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+	padding: 15px 20px;
+    margin: 10px 5px;
+    border-radius: 15px;
+	font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button.delete-all-profiles {
+    background-color: #dc3545; /* Red color */
+    color: white;
+}
+button.create-profile {
+    background-color: #007BFF; /* Green color */
+    color: white;
+}
+button:hover {
+    background-color: grey;
+}
+/* Style for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Style for the "Save Changes" button */
+.save-button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 15px 20px;
+    margin-right: 10px; /* Add some space between buttons */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the "Cancel" button */
+.cancel-button {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.section {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.section div {
+    margin-bottom: 10px;
+}
+
+#profile-section {
+    margin: 20px 0;
+}
+
+#profiles {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #fafafa;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 1em;
+    color: #333;
+}
+
+#welcome-container {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+#profile-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    object-fit: cover;
+    border-radius: 50%; /* Make it a circle */
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome-message {
+    margin-top: 120px; /* Adjust this to ensure the message is below the profile picture */
+}

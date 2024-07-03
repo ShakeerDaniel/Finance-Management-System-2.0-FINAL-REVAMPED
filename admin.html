@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/back.css">
+</head>
+<body>
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+    <div class="container">
+	    <h1>Welcome To Your Finance Manager!</h1>
+        <h2>Admin Profile Management</h2>
+        <div id="profile-section">
+        <button onclick="createProfile()" class="create-profile">Create Profile</button>
+            <div id="profiles"></div>
+        </div>
+        <button onclick="deleteAllProfiles()" class="delete-all-profiles">Delete All Profiles</button>
+		<div><button onclick="logout()" class="logout">Logout</button></div>
+    </div>
+    <script src="js/profile.js"></script>
+    <script>
+        window.onload = loadProfiles;
+    </script>
+</body>
+</html>

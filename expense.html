@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link rel="stylesheet" href="css/back.css">
+</head>
+<body>
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+    <div class="container">
+        <h1>Add Expense</h1>
+        <form id="expense-form">
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option value="Food">Food</option>
+                <option value="Bills">Bills</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Misc">Misc</option>
+            </select>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+            <button type="submit" class="save-button">Add Expense</button>
+        </form>
+        <div id="expense-result"></div>
+        <div class = "chart-container" style="width: 50%;">
+            <canvas id="myPieChart"></canvas>
+        </div>
+        <button onclick="removeData()"class="cancel-button">Remove Selected Data</button>
+        <button onclick="redirectToHome()">Home</button>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/expense.js"></script>
+</body>
+</html>
+
